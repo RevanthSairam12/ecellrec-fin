@@ -124,7 +124,7 @@ export default function Home() {
 
       {/* Events */}
       <div className="mb-20 sm:mb-64 m-2 sm:m-44" id="events">
-        <h1 className="text-lg sm:text-4xl font-mono flex justify-center m-3 sm:m-5">Explore Past Events</h1>
+        <h1 className="text-3xl flex md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6 justify-center">Explore Past Events</h1>
         <EventsVideo />
         <div className="flex justify-center p-4 sm:p-10" onClick={() => window.location.href = "https://esummit-rec.vercel.app/"}>
           <RainbowButton>Visit E-SUMMIT&apos;25 site</RainbowButton>
@@ -133,20 +133,20 @@ export default function Home() {
 
       {/* Highlights */}
       <div className="m-2 sm:m-5">
-        <h1 className="text-2xl sm:text-4xl font-mono flex justify-center m-4 sm:m-10">Highlights</h1>
+        <h1 className="text-3xl flex md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6 justify-center">Highlights</h1>
         <BlurFade />
       </div>
 
       {/* Resources */}
       <div id="resources" className="mt-20 sm:mt-40 px-2">
-        <h1 className="text-2xl sm:text-4xl font-mono flex justify-center m-3 sm:m-5">Resources</h1>
+        <h1 className="text-3xl flex md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6 justify-center">Resources</h1>
         <BentoGridSecondDemo />
       </div>
 
       {/* Faculty Coordinator */}
       {/* Faculty Coordinator */}
       <div id="team" className="mt-20 sm:mt-40 px-2">
-        <h1 className="text-2xl sm:text-4xl font-mono flex justify-center m-3 sm:m-5">Faculty Coordinator</h1>
+        <h1 className="text-3xl flex md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent mb-6 justify-center">Faculty Coordinator</h1>
         <div className="flex justify-center">
           <TeamCard
             key={20}
