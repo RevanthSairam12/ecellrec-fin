@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { CalendarIcon, HomeIcon, MailIcon, Star, Users, BookText, CalendarDays, Rocket, Eye, InfoIcon } from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon, Star, Users, BookText, Crown, Rocket, Eye, InfoIcon, AlarmClock } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -36,10 +36,11 @@ const Icons = {
   testimonial: (props: IconProps) => (<Star {...props} />),
   teams: (props: IconProps) => (<Users {...props} />),
   resources: (props: IconProps) => (<BookText {...props} />),
-  events: (props: IconProps) => (<CalendarDays {...props} />),
+  events: (props: IconProps) => (<AlarmClock {...props} />),
   mission: (props: IconProps) => (<Rocket {...props} />),
   vision: (props: IconProps) => (<Eye {...props} />),
   about: (props: IconProps) => (<InfoIcon {...props} />),
+  formerTeam: (props: IconProps) => (<Crown {...props} />),
   // Additional icons ...
 };
 
@@ -53,11 +54,13 @@ const DATA = {
     social: {
       Events: { name: "Events", url: "#events", icon: Icons.events },
       Resources: { name: "Resources", url: "#resources", icon: Icons.resources },
+      Calendar: { name: "Events Calendar", url: "/calendar", icon: Icons.calendar }
     },
     other: {
       Team: { name: "Team", url: "#team", icon: Icons.teams },
       Testimonials: { name: "Testimonials", url: "#Testimonials", icon: Icons.testimonial },
       About: {name:"Advisory Board", url:"/about", icon: Icons.about },
+      FormerTeam: {name: "Former Team", url: "/former-team", icon: Icons.formerTeam}
     },
   },
 };
